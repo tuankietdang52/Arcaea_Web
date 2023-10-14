@@ -39,19 +39,6 @@ html, body{
     display: grid;
 }
 
-/* Đừng dùng id name, nên dùng class name */
-/* Tức là đổi #login thành .login, rồi trong <div class="login"> kiểu vậy, do  */
-/* Nó được cái là e có thể thêm nhiều style cùng chỗ, vd:  */
-/* <div class="btn red"> chẳng hạn */
-/* v id nen dung khi nao a */
-/* Almost never honestly, Web hiện đại hiếm lắm mới dùng nó, do gv dạy kiêu dùng cũ thì chịu =]] */
-/* cmn thay day la nen tap dung id */
-/* Giống kiểu thầy nói để căn giữa dùng absolute + top -50% à? dr a */
-/* Yeah đừng =]], thời đại văn minh dùng class name đê */
-/* ma e dung absolute de chinh hinh nay de` len hinh kia co sao kh a */
-/* Ổn e, mà e xem thử fixed chưa?, chua =)), xem thử đi =]] */
-
-
 
 #login button{
     width: 240px;
@@ -208,7 +195,6 @@ html, body{
 
 #down-nav-container{
     display: flex;
-    flex-direction: column;
     align-self: center;
     justify-self: center;
     margin: 0px 120px 0px 120px;
