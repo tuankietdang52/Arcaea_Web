@@ -34,13 +34,13 @@ html, body{
     color: white;
 }
 
-#login{
+.login{
     width: 1000px;
     display: grid;
 }
 
 
-#login button{
+.login button{
     width: 240px;
     border: none;
     background-color: transparent;
@@ -51,7 +51,7 @@ html, body{
     display: grid;
 }
 
-#login-container{
+.login-container{
     align-self: center;
     justify-self: center;
     display: flex;
@@ -59,18 +59,18 @@ html, body{
     gap: 5px;
 }
 
-#login-container img{
+.login-container img{
     margin-top: 13px;
     width: 34px;
     height: 30px;
 }
 
-#login-container p{
+.login-container p{
    font-size: 20px;
    font-weight: bold;
 }
 
-#login button:hover{
+.login button:hover{
     opacity: 0.9;
 }
 
@@ -124,14 +124,14 @@ html, body{
     background-image: url("../img/mainbackground.png");
 }
 
-#main-character{
+.main-character{
     position: relative;
     justify-self: center;
     width: 100%;
     overflow: hidden;
 }
 
-#tairitsu{
+.tairitsu{
     opacity: 0;
     justify-self: flex-start;
     height: 1300px;
@@ -144,7 +144,7 @@ html, body{
 }
 
 
-#hikari{
+.hikari{
     opacity: 0;
     position: absolute;
     height: 1300px;
@@ -167,7 +167,7 @@ html, body{
     to {opacity: 1; transform: translateX(0px);}
 }
 
-#logotitle{
+.logotitle{
     position: absolute;
     justify-self: center;
     align-self: flex-end;
@@ -176,7 +176,7 @@ html, body{
     margin-bottom: 70px;
 }
 
-#logotagline{
+.logotagline{
     position: absolute;
     justify-self: center;
     align-self: flex-end;
@@ -193,7 +193,7 @@ html, body{
     display: grid;
 }
 
-#down-nav-container{
+.down-nav-container{
     display: flex;
     align-self: center;
     justify-self: center;
@@ -206,7 +206,7 @@ html, body{
     height: 250px;
 }
 
-#preview iframe{
+.preview iframe{
     width: 800px;
     height: 500px;
 }
