@@ -1,0 +1,231 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: Open Sans,sans-serif;
+    animation-name: showup;
+    animation-duration: 1.5s;
+}
+
+@keyframes showup{
+    0%{
+        opacity: 0;
+    }   
+}
+
+#headerbar{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: black;
+}
+
+#headerbar img{
+    width: 270px;
+    height: 73px;
+}
+
+#header-nav{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    font-size: 25px;
+    color: white;
+}
+
+#login{
+    width: 1000px;
+    display: grid;
+}
+
+/* Đừng dùng id name, nên dùng class name */
+/* Tức là đổi #login thành .login, rồi trong <div class="login"> kiểu vậy, do  */
+/* Nó được cái là e có thể thêm nhiều style cùng chỗ, vd:  */
+/* <div class="btn red"> chẳng hạn */
+/* v id nen dung khi nao a */
+/* Almost never honestly, Web hiện đại hiếm lắm mới dùng nó, do gv dạy kiêu dùng cũ thì chịu =]] */
+/* cmn thay day la nen tap dung id */
+/* Giống kiểu thầy nói để căn giữa dùng absolute + top -50% à? dr a */
+/* Yeah đừng =]], thời đại văn minh dùng class name đê */
+/* ma e dung absolute de chinh hinh nay de` len hinh kia co sao kh a */
+/* Ổn e, mà e xem thử fixed chưa?, chua =)), xem thử đi =]] */
+
+
+
+#login button{
+    width: 240px;
+    border: none;
+    background-color: transparent;
+    justify-self: flex-end;
+    background-image: url("../img/button_account-login.0a477ace.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+}
+
+#login-container{
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    margin-top: -12px;
+    gap: 5px;
+}
+
+#login-container img{
+    margin-top: 13px;
+    width: 34px;
+    height: 30px;
+}
+
+#login-container p{
+   font-size: 20px;
+   font-weight: bold;
+}
+
+#login button:hover{
+    opacity: 0.9;
+}
+
+#header-nav li{
+    padding: 10px;
+}
+
+#header-nav a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+.notinpage::after{
+    position: absolute;
+    content: "";
+    width: 100%;    
+    height: 2px;
+    bottom: -4px;
+    left: 0px;
+    background-color: white;
+    transform: scale(0);
+    transform-origin: right top;
+    transition: transform 3s;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.notinpage:hover::after{
+    transform: scale(1);
+    transform-origin: left top;
+}
+
+.inpage::after{
+    position: absolute;
+    content: "";
+    width: 100%;    
+    height: 2px;
+    bottom: -4px;
+    left: 0px;
+    background-color: white;
+}
+
+#mainbg{
+    display: grid;
+    width: 100%;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/mainbackground.png");
+}
+
+#main-character{
+    position: relative;
+    justify-self: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+#tairitsu{
+    opacity: 0;
+    justify-self: flex-start;
+    height: 1300px;
+    width: 1300px;
+    margin-left: 50px;
+    animation-name: fadeinleft;
+    animation-duration: 1s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+}
+
+
+#hikari{
+    opacity: 0;
+    position: absolute;
+    height: 1300px;
+    width: 1300px;
+    margin-left: -700px;
+    margin-top: 200px;
+    animation-name: fadeinright;
+    animation-duration: 1s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeinleft{
+    from {opacity: 0; transform: translateX(20px);}
+    to {opacity: 1; transform: translateX(40px);}
+}
+
+@keyframes fadeinright{
+    from {opacity: 0; transform: translateX(20px);}
+    to {opacity: 1; transform: translateX(0px);}
+}
+
+#logotitle{
+    position: absolute;
+    justify-self: center;
+    align-self: flex-end;
+    width: 900px;
+    height: 243px;
+    margin-bottom: 70px;
+}
+
+#logotagline{
+    position: absolute;
+    justify-self: center;
+    align-self: flex-end;
+    width: 273px;
+    height: 73px;
+    margin-bottom: 280px;
+}
+
+#down-nav-sect{
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/downbg.jpg");
+    display: grid;
+}
+
+#down-nav-container{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    margin: 0px 120px 0px 120px;
+    gap: 100px;
+}
+
+.down-nav img{
+    width: 726px;
+    height: 250px;
+}
+
+#preview iframe{
+    width: 800px;
+    height: 500px;
+}
+
+#lightandconflict{
+    height: 1000px;
+}
+
