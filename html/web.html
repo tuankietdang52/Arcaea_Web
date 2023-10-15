@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/anime.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <link rel="stylesheet" href="../css/mainstyle.css">
     <script src="../js/code.js"></script>
 
@@ -12,22 +15,22 @@
 </head>
 <body>
     <header>
-        <div id="headerbar">
-            <img src="../img/arcaealogowithtitle.png" alt="logo">
-            <ul id="header-nav">
-                <li><a class="inpage" onclick="inpage(this)" href="#">Home</a></li>
-                <li><a class="notinpage" onclick="inpage(this)" href="#">Songs</a></li>
-                <li><a class="notinpage" onclick="inpage(this)" href="#">Story</a></li>
-                <li><a class="notinpage" onclick="inpage(this)" href="#">Character</a></li>
-            </ul>
-            <div class="login">
-                <button>
-                    <div class="login-container">
-                        <img src="../img/loginicon.png" alt="loginicon">
-                        <p>Log In</p>
-                    </div>
-                </button>
+        <div class="headerbar">
+            <div class="header-nav-container">
+                <img src="../img/arcaealogowithtitle.png" alt="logo">
+                <ul class="header-nav" id="header-nav">
+                    <li><a class="inpage" onclick="inpage(this)" href="#">Home</a></li>
+                    <li><a class="notinpage" onclick="inpage(this)" href="#">Songs</a></li>
+                    <li><a class="notinpage" onclick="inpage(this)" href="#">Story</a></li>
+                    <li><a class="notinpage" onclick="inpage(this)" href="#">Character</a></li>
+                </ul>
             </div>
+            <button class="login">
+                <div class="login-container">
+                    <img class="icon" src="../img/loginicon.png" alt="loginicon">
+                    <p>Log In</p>
+                </div>
+            </button>
         </div>
     </header>
     <section id="mainbg">
@@ -41,7 +44,7 @@
     <section id="down-nav-sect">
         <div class="down-nav-container">
             <div class="preview">
-               <iframe src="https://www.youtube.com/embed/yeDtmGY8njA" frameborder="0" allowfullscreen="1"></iframe>
+               <!-- <iframe src="https://www.youtube.com/embed/yeDtmGY8njA" frameborder="0" allowfullscreen="1"></iframe> -->
             </div>
             <div class="down-nav"> 
                 <a href="https://play.google.com/store/apps/details?id=moe.low.arc&hl=vi&gl=US&pli=1">
@@ -53,7 +56,37 @@
             </div>
         </div>
     </section>
-    <section id="lightandconflict">
+    <section class="lightandconflict">
+        <div class="light-border-container">
+            <div class="light-border">
+                <img src="../img/titleborder.png" alt="light">
+                <p>Light</p>
+            </div>
+        </div>
+        <div class="light">
+            <p class="lightstory">They say that this is true: anything in excess is a poison. She either didn’t know, or hadn’t cared.
+                The girl now walks past what seemed to have been an old concert hall, the impact of its grandness dulled
+                as it had been split perfectly in twain, as if some higher power had willed it so. Out of the tomb of sound
+                drift memories again: of dances, of performance, hopes, victories.
+                
+                Her mouth twitches. Has it simply become boring, or is this something else? She lifts her hands and the
+                Arcaea come to her, gently weaving over her palms and through her fingers. Blankly she notes them. How
+                many times has she seen the last hurrah of a retiring band? How many times has she seen two brothers
+                embrace? Too many times she’s seen the formation of a love, so frequent it was apparently standard in old
+                and forgotten worlds.
+                
+                She lets the memories go, and genuinely thinks nothing of it.
+                
+                They rise. They fly to join with the memories she’s still been gathering, and she looks at their destination
+                now. It’s grown much brighter since she began her collecting. It seems to grow brighter every day...
+                
+                How many days has it even been? She winces, and a grimace twists onto her face. She shakes it away.
+                
+                Maybe she only needs more, then whatever is missing will be found. She calms herself and carries on, not
+                letting it bother her that no matter what, she cannot push the Arcaea following her away.
+            </p>
+        </div>
+        
     </section>
 </body>
 </html>

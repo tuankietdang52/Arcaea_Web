@@ -12,21 +12,27 @@ html, body{
     }   
 }
 
-#headerbar{
+.headerbar{
     width: 100%;
     height: 150px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto;
     align-content: center;
     background-color: black;
 }
 
-#headerbar img{
+.header-nav-container{
+    justify-self: flex-start;
+    width: 100%;
+    display: flex;
+}
+
+.headerbar img{
     width: 270px;
     height: 73px;
 }
 
-#header-nav{
+.header-nav{
     display: flex;
     gap: 50px;
     list-style: none;
@@ -34,13 +40,10 @@ html, body{
     color: white;
 }
 
+
 .login{
-    width: 1000px;
-    display: grid;
-}
-
-
-.login button{
+    justify-self: flex-end;
+    margin-right: 20px;
     width: 240px;
     border: none;
     background-color: transparent;
@@ -59,7 +62,7 @@ html, body{
     gap: 5px;
 }
 
-.login-container img{
+.login .icon{
     margin-top: 13px;
     width: 34px;
     height: 30px;
@@ -74,21 +77,22 @@ html, body{
     opacity: 0.9;
 }
 
-#header-nav li{
+.header-nav li{
     padding: 10px;
 }
 
-#header-nav a{
+.header-nav a{
     position: relative;
     text-decoration: none;
     color: white;
+    font-weight: bold;
 }
 
 .notinpage::after{
     position: absolute;
     content: "";
     width: 100%;    
-    height: 2px;
+    height: 3px;
     bottom: -4px;
     left: 0px;
     background-color: white;
@@ -109,7 +113,7 @@ html, body{
     position: absolute;
     content: "";
     width: 100%;    
-    height: 2px;
+    height: 3px;
     bottom: -4px;
     left: 0px;
     background-color: white;
@@ -211,7 +215,47 @@ html, body{
     height: 500px;
 }
 
-#lightandconflict{
-    height: 1000px;
+.lightandconflict{
+    height: 2000px;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
+.light-border-container{
+    display: grid;
+}
+
+.light-border p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.light-border{
+    justify-self: center;
+}
+
+.light{
+    justify-self: flex-end;
+    width: 50%;
+    height: 1000px;
+    background-image: url("../img/characterbg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.lightstory{
+    width: 60%;
+    justify-self: flex-end;
+    align-self: flex-end;
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+}
+
+.lightborder{
+    height: 200px;
+}
