@@ -3,25 +3,32 @@ $(document).ready(function(){
     lighttxt.waypoint({
         handler: function(direction){
             if (direction == "down"){
-                storytextanimate();
+                lightstorytextanimate();
             }
         },
-        offset: '70%',
+        offset: '90%',
+    })
+
+    let conflicttxt = $('.conflictstory');
+    conflicttxt.waypoint({
+        handler: function(direction){
+            if (direction == "down"){
+                conflictstorytextanimate();
+            }
+        },
+        offset: '90%',
     })
 })
 
 let countlightstry = false;
+let countconflictstry = false;
 
-function storytextanimate(){
+function lightstorytextanimate(){
     if (countlightstry) return;
     let textwrap = document.querySelector('.lightstory');
     textwrap.innerHTML = textwrap.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-    let sectopacity = $(".lightstory").css("opacity");
-
     $(".lightstory").css("opacity", 1);
-
-    sectopacity = $(".lightstory").css("opacity");
 
     let animate = anime.timeline({loop: false}).add({
         targets: '.lightstory .letter',
@@ -36,6 +43,28 @@ function storytextanimate(){
     countlightstry = true;
     return animate;
 }
+
+function conflictstorytextanimate(){
+    if (countconflictstry) return;
+    let textwrap = document.querySelector('.conflictstory');
+    textwrap.innerHTML = textwrap.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    $(".conflictstory").css("opacity", 1);
+
+    let animate = anime.timeline({loop: false}).add({
+        targets: '.conflictstory .letter',
+        scale: [4,1],
+        opacity: [0,1],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 950,
+        delay: (el, i) => 10*i,
+    })
+
+    countconflictstry = true;
+    return animate;
+}
+
 
 function inpage(pagenav){
    if (pagenav.className == "inpage") return;
