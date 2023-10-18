@@ -70,11 +70,46 @@ function inpage(pagenav){
    if (pagenav.className == "inpage") return;
    
    let otherpagenav = document.getElementById("header-nav").children;
-   for (let i = 0; i < 4; i++){
+   for (let i = 0; i < 3; i++){
         let otherpagenav_a = otherpagenav[i].children;
         if (otherpagenav_a[0].className == "inpage"){
             otherpagenav_a[0].className = "notinpage";
         }
    }
    pagenav.className = "inpage";
+}
+
+
+function screenshotchange(){
+    let element = document.getElementsByClassName('gamescreenshots-container');
+    let width = -element[0].offsetWidth;
+    let tl = anime.timeline({
+        easing: 'easeInOutExpo',
+        duration: 1000,
+        loop: true
+    })
+
+    tl.add({
+        targets: '.gamescreenshots',
+        translateX: [0, width],
+    }, '+=2000')
+
+    width += -element[0].offsetWidth;
+
+    tl.add({
+        targets: '.gamescreenshots',
+        translateX: width,
+    }, '+=2000')
+
+    width += -element[0].offsetWidth;
+
+    tl.add({
+        targets: '.gamescreenshots',
+        translateX: width,
+    }, '+=2000')
+
+    tl.add({
+        targets: '.gamescreenshots',
+        translateX: [width, 0],
+    }, '+=2000')
 }

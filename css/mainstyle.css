@@ -43,7 +43,7 @@ html, body{
 
 .login{
     justify-self: flex-end;
-    margin-right: 20px;
+    transform: translateX(-40px);
     width: 240px;
     border: none;
     background-color: transparent;
@@ -58,12 +58,12 @@ html, body{
     align-self: center;
     justify-self: center;
     display: flex;
-    margin-top: -12px;
+    transform: translateY(-5px);
     gap: 5px;
 }
 
 .login .icon{
-    margin-top: 13px;
+    transform: translateY(15px);
     width: 34px;
     height: 30px;
 }
@@ -73,7 +73,7 @@ html, body{
    font-weight: bold;
 }
 
-.login button:hover{
+.login:hover{
     opacity: 0.9;
 }
 
@@ -189,7 +189,7 @@ html, body{
     margin-bottom: 280px;
 }
 
-#down-nav-sect{
+.videopreview{
     height: 800px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -197,17 +197,19 @@ html, body{
     display: grid;
 }
 
-.down-nav-container{
-    display: flex;
-    align-self: center;
+.videopreview img{
+    width: 234px;
+    height: 75px;
     justify-self: center;
-    margin: 0px 120px 0px 120px;
-    gap: 100px;
+    transform: translateY(80px);
 }
 
-.down-nav img{
-    width: 726px;
-    height: 250px;
+.videopreview-container{
+    display: grid;
+    align-self: flex-end;
+    justify-self: center;
+    transform: translateY(-70px);
+    gap: 100px;
 }
 
 .preview iframe{
@@ -249,6 +251,12 @@ html, body{
 
 .char-title .title-border p{
     transform: translate(45px, -8px);
+}
+
+.char-title .title-border em{
+    font-weight: bold;
+    justify-self: center;
+    transform: translate(40px, 10px);
 }
 
 .light-container .title-border img{
@@ -359,13 +367,13 @@ html, body{
     position: absolute;
     width: 1200px;
     height: 1200px;
-    transform: translateX(350px);
+    transform: translateX(400px);
     background-color: transparent;
 }
 
 .conflictstory{
     width: 60%;
-    margin-right: 20px;
+    margin-left: 20px;
     justify-self: flex-start;
     align-self: flex-end;
     text-align: justify;
@@ -373,3 +381,37 @@ html, body{
     color: white;
     opacity: 0;
 }
+
+.screenshots{
+    height: 1000px;
+    background-image: url("../img/screenshotbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+}
+
+.screenshotstitle{
+    width: 312px;
+    height: 75px;
+    justify-self: center;
+    transform: translateY(50px);
+}
+
+.gamescreenshots-container{
+    height: 600px;
+    width: 1300px;
+    justify-self: center;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.gamescreenshots{
+    display: flex;
+}
+
+.gamescreenshots img{
+    height: 600px;
+    width: 1300px;
+}
+
