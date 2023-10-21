@@ -18,13 +18,24 @@ $(document).ready(function(){
         },
         offset: '90%',
     })
+
+    let downtitle = $('.download-nav-sect');
+    downtitle.waypoint({
+        handler: function(direction){
+            if (direction == "down"){
+                titledownloadeffect();
+            }
+        },
+        offset: '85%',
+    })
 })
 
-let countlightstry = false;
-let countconflictstry = false;
+let IsLightStryEffect = false;
+let IsConflictStryEffect = false;
+let IsTitleDownloadEffect = false;
 
 function lightstorytextanimate(){
-    if (countlightstry) return;
+    if (IsLightStryEffect) return;
     let textwrap = document.querySelector('.lightstory');
     textwrap.innerHTML = textwrap.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
@@ -40,12 +51,11 @@ function lightstorytextanimate(){
         delay: (el, i) => 10*i,
     })
 
-    countlightstry = true;
-    return animate;
+    IsLightStryEffect = true;
 }
 
 function conflictstorytextanimate(){
-    if (countconflictstry) return;
+    if (IsConflictStryEffect) return;
     let textwrap = document.querySelector('.conflictstory');
     textwrap.innerHTML = textwrap.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
@@ -61,8 +71,7 @@ function conflictstorytextanimate(){
         delay: (el, i) => 10*i,
     })
 
-    countconflictstry = true;
-    return animate;
+    IsConflictStryEffect = true;
 }
 
 
@@ -112,4 +121,14 @@ function screenshotchange(){
         targets: '.gamescreenshots',
         translateX: [width, 0],
     }, '+=2000')
+}
+
+
+function titledownloadeffect(){
+    if (IsTitleDownloadEffect) return;
+
+    let downtitle = document.getElementsByClassName("download-title");
+    downtitle[0].className = "download-title-effect";
+
+    IsTitleDownloadEffecty = true;
 }

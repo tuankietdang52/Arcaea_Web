@@ -14,11 +14,11 @@ html, body{
 
 .headerbar{
     width: 100%;
-    height: 150px;
+    height: 100px;
     display: grid;
     grid-template-columns: auto auto;
     align-content: center;
-    background-color: black;
+    background-color: #1f1f25;
 }
 
 .header-nav-container{
@@ -42,9 +42,11 @@ html, body{
 
 
 .login{
+    align-self: center;
     justify-self: flex-end;
     transform: translateX(-40px);
-    width: 240px;
+    width: 170px;
+    height: 70px;
     border: none;
     background-color: transparent;
     justify-self: flex-end;
@@ -63,13 +65,13 @@ html, body{
 }
 
 .login .icon{
-    transform: translateY(15px);
+    transform: translateY(8px);
     width: 34px;
     height: 30px;
 }
 
 .login-container p{
-   font-size: 20px;
+   font-size: 15px;
    font-weight: bold;
 }
 
@@ -193,7 +195,7 @@ html, body{
     height: 800px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../img/downbg.jpg");
+    background-image: url("../img/vidbg.jpg");
     display: grid;
 }
 
@@ -415,3 +417,124 @@ html, body{
     width: 1300px;
 }
 
+.download-nav-sect{
+    height: 400px;
+    background-image: url("../img/downbg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+}
+
+.download-title{
+    opacity: 0;
+}
+
+.download-title-effect{
+    align-self: center;
+    justify-self: center;
+    font-size: 40px;
+    color: white;
+    opacity: 0;
+    animation-name: fadeinabove;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeinabove{
+    from {opacity: 0; transform: translateY(0px);}
+    to {opacity: 1; transform: translateY(20px);}
+}
+
+.download-nav-container{
+    align-self: center;
+    justify-self: center;
+    transform: translateY(-30px);
+    display: flex;
+    gap: 20px;
+}
+
+.download-nav-container img{
+    width: 500px;
+    height: 167px;
+}
+
+.contact-us-container{
+    display: grid;
+    height: 200px;
+}
+
+.contact-us{
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact-us a{
+    width: 300px;
+    height: 112px;
+}
+
+.contact-us img{
+    width: 300px;
+    transform: translateX(8px);
+}
+
+.contact-us img:hover{
+    opacity: 0.8;
+}
+
+footer{
+    height: 350px;
+    display: grid;
+}
+
+.footer-content-container{
+    height: 280px;
+    background-color: #34333e;
+    display: grid;
+}
+
+.footer-content{
+    align-self: center;
+    justify-self: center;
+    height: 250px;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 34% 33% 33%;
+}
+
+.footer-content em{
+    align-self: center;
+    justify-self: flex-start;
+    color: white;
+    font-size: 20px;
+}
+
+.footer-content .logo{
+    align-self: center;
+    justify-self: center;
+    width: 200px;
+    height: 58.14px;
+}
+
+.lowiro{
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.copyright-container{
+    height: 70px;
+    width: 100%;
+    display: grid;
+}
+
+.copyright{
+    font-size: 15px;
+    align-self: center;
+    justify-self: center;
+}

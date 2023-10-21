@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="279" viewBox="0 0 1920 279">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.203" y1="1" x2="1.269" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3030ca" stop-opacity="0.2"/>
+      <stop offset="0.058" stop-color="#3030ca" stop-opacity="0.2"/>
+      <stop offset="0.381" stop-color="#3030ca" stop-opacity="0.102"/>
+      <stop offset="0.564" stop-color="#890648" stop-opacity="0.102"/>
+      <stop offset="0.871" stop-color="#890648" stop-opacity="0.702"/>
+      <stop offset="1" stop-color="#890648"/>
+    </linearGradient>
+  </defs>
+  <g id="background-switchpermanent" transform="translate(0 -4186)">
+    <rect id="Rectangle_165" data-name="Rectangle 165" width="1920" height="279" transform="translate(0 4186)" fill="#35313d"/>
+    <rect id="Rectangle_166" data-name="Rectangle 166" width="279" height="1920" transform="translate(0 4465) rotate(-90)" fill="url(#linear-gradient)" style="mix-blend-mode: hard-light;isolation: isolate"/>
+    <path id="Path_930" data-name="Path 930" d="M-4911.213,2951.969H-6047.9l-154.991,157.5h1446.659Z" transform="translate(6439.889 1355.531)" fill="#ffbcde" opacity="0.2" style="mix-blend-mode: soft-light;isolation: isolate"/>
+  </g>
+</svg>
